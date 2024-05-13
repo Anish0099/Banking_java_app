@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 10px;
+    padding-left:20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  
+}
+
+label {
+  font-weight: bold;
+  margin-bottom:5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration:none;
+  
+}
+
+.btn-group{
+text-align:center;
+
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+ 
+
+
+</style>
+</head>
+<body>
+	<div class="container">
+  <form action='BalanceServlet' method='get'>
+    <h2>Balance Details</h2>
+    <div class="input-group">
+      <label for="username">Acc no:</label>
+      <input type="text" id="username" name="accno" />
+    </div>
+    
+    <div class='btn-group'>
+    <button type="submit" class="btn">Check Balance</button>
+    
+    <a type="submit" href="home.html" class="btn">Back to home</a>
+    
+    </div>
+    
+  </form>
+</div>
+
+</body>
+</html>
